@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url: 'http://localhost:2500',
+  temperatureSensorId: 'Temp1uniqueid2021',
+  humiditySensorId: 'Humidity1uniqueid2021',
 };
 
 /*

@@ -1,0 +1,34 @@
+<div fxLayout="row" fxLayoutAlign="center top" class="row-height">
+  <div fxFlex="90%" style="height:45%" fxLayout="column">
+    <ngx-charts-line-chart
+      [scheme]="colorScheme"
+      [legend]="legend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxis]="xAxis"
+      [yAxis]="yAxis"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      [timeline]="timeline"
+      [results]="series"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)">
+    </ngx-charts-line-chart>
+    <ngx-charts-line-chart
+      [scheme]="colorSchemeHumidity"
+      [legend]="legendHumidity"
+      [showXAxisLabel]="showXAxisLabelHumidity"
+      [showYAxisLabel]="showYAxisLabelHumidity"
+      [xAxis]="xAxisHumidity"
+      [yAxis]="yAxisHumidity"
+      [xAxisLabel]="xAxisLabelHumidity"
+      [yAxisLabel]="yAxisLabelHumidity"
+      [timeline]="timelineHumidity"
+      [results]="seriesHumidity"
+      (select)="onSelect($event)"
+      (activate)="onActivate($event)"
+      (deactivate)="onDeactivate($event)">
+    </ngx-charts-line-chart>
+  </div>
+</div>
